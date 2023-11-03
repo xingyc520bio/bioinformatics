@@ -67,5 +67,10 @@ IFTSEQGEKLYLVKHLS
 
 Do you find it easier to deduce the domain organisation from this output than from that of fasta? 
 If you are unsure ask a demonstrator.
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/2debc66e-ed5e-4d81-9027-a8fb23c7c0b0)
+
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/5d6bfbbd-6608-4eb5-8d0f-a40dff18e069)
+
+BLASTp take a little bit longer and it have lower e-value and higher sensitivity.
 
 
