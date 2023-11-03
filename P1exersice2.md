@@ -30,31 +30,6 @@ http://www.ebi.ac.uk/Tools/services/web/toolresult.ebi?tool=fasta&jobId=fasta-E2
 
 The job results will be available for 7 days.
 
-Job Details
-===========
-
-stype: protein
-matrix: BL50
-match_scores: none
-gapopen: -10
-gapext: -2
-hsps: false
-expupperlim: 10.0
-explowlim: 0.0
-strand: none
-hist: false
-scores: 150
-alignments: 150
-scoreformat: default
-stats: 1
-annotfeats: false
-dbrange: START-END
-seqrange: START-END
-filter: none
-transltable: -1
-database: [uniprotkb_swissprot]
-ktup: 2
-
 On the submission form choose the swiss-prot database and request 150 scores and 150 alignments (click "More options"). 
 Then either paste the FASTA format sequence into the box or upload the file you saved using the "Browse.." option, and press Submit.
 
