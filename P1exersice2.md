@@ -23,19 +23,25 @@ Goto the ***EBI FASTA*** server.
 Link is: https://www.ebi.ac.uk/Tools/sss/fasta/
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/9f6f60f9-6669-45f1-8210-1c7ff4049778)
 
-I get this email   
-The results for the job "Miss Xing" (ID: fasta-E20231103-140303-0703-59897707-p1m) can be viewed at:
 
-http://www.ebi.ac.uk/Tools/services/web/toolresult.ebi?tool=fasta&jobId=fasta-E20231103-140303-0703-59897707-p1m
-
-The job results will be available for 7 days.
 
 On the submission form choose the swiss-prot database and request 150 scores and 150 alignments (click "More options"). 
 Then either paste the FASTA format sequence into the box or upload the file you saved using the "Browse.." option, and press Submit.
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/044a06cb-8e19-40ac-b64c-6d105e4a0aca)
 
 Examine the results file. Examine your significant hits (lets take a cutoff at E=0.001 to define significance for the purposes of this exercise). 
 Note that most significant hits are indeed glutathione S-transferases. But note also that some glutathione S-transferases do not have significant scores, 
 showing that simple pairwise comparison is not always sufficient to detect an evolutionary relationship. 
+
+I get this email   
+The results for the job "Miss Xing" (ID: fasta-E20231103-140303-0703-59897707-p1m) can be viewed at:    
+
+http://www.ebi.ac.uk/Tools/services/web/toolresult.ebi?tool=fasta&jobId=fasta-E20231103-140303-0703-59897707-p1m
+
+The job results will be available for 7 days.
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/acf838f2-99a3-499d-b4d7-64cb22243d25)
+
+
 Note also that a protein called S-CRYSTALLIN generates significant scores. These are not glutathione S-transferases, 
 in fact these proteins are believed to play a structural role in the eye lens. They are not even enzymes. What does this tell us about evolution, 
 and the use of sequence similarity to predict function?
