@@ -1,1 +1,32 @@
+## Exercise 3: A more complex sequence analysis example.
+The example sequence in this case is called ***NCK1_HUMAN***. 
+Find it using the search box at the SWISSPROT database (as in Exercise 2). 
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/ea356b65-0427-4c70-8de2-15476b3516a6)
+
+Again save the sequence in a text file (you will need it again later).
+
+We are going to try to find out something about the likely structure and function of this sequence on the basis of similarity to database sequences.
+
+### Part 1. Run a FASTA search at the NPS@ server. (tip: paste just the sequence into the box - without the header information)
+Link is: https://npsa-pbil.ibcp.fr/cgi-bin/npsa_automat.pl?page=/NPSA/npsa_server.html   
+
+Examine your results. 
+You will see that the very protein itself is within SWISSPROT, and found, unsurprisingly, as the top hit. However, we'll ignore this for the moment and imagine a more realistic situation where this is not the case. 
+This amounts to learning about the query protein using hits from the second best onwards.
+
+Looking at the list of hits we don't see one dominant type of hit as we did with the glutathione S-transferase sequence. 
+We see some tyrosine kinases, some phosphatases, some GTPase activating proteins, and some others. 
+This would lead us to suspect that our protein has some role in signal transduction, but tells us nothing more specific.
+
+Within the top ten hits is GRAP_DROME (Q08012). 
+Click on the e-value (right-hand column) and examine the alignment. 
+There are two very striking features in this alignment. 
+What do you think they are? 
+What might they tell us about the domain structure of our query sequence, and about its likely functional similarity with DRK_DROME? 
+Scroll down a few more alignments and see if you can learn any more.
+
+### Part 3. Re-do part 1 but this time use blastp at the NPS@ server.
+
+Note that blast often reports several segments of similarity between each pair of sequences (click on the link from the E-value on the results page to get the alignment). Do you find it easier to deduce the domain organisation from this output than from that of fasta? If you are unsure ask a demonstrator.
+
 
