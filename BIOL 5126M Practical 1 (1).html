@@ -1,0 +1,204 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>BIOL 5126M: Practical 1</title></head>
+<body bgcolor="WHITE">
+
+<br>
+
+<center>
+  <h1>BIOL5172M: Practical 1</h1></center>
+
+<p>
+The topics covered in this practical are:
+</p><ol>
+<li>Protein sequence databases.
+</li><li>Database similarity searches using Smith-Waterman, FASTA and BLAST.
+</li><li>The domain problem in sequence similarity searches.
+</li></ol>
+
+<hr>
+
+<h3>Exercise 1: The SWISSPROT database</h3>
+
+<p>
+The SWISSPROT database is freely available for use in academic research.
+It is a collaborative project between the European Bioinformatics Institute 
+and the Swiss Institute of Bioinformatics.  The database is 
+created by translation of protein coding sequences in the EMBL nucleic acid 
+sequence database. There is a large team of curators, who create the sequence 
+entries and annotations manually.  This is a major task, and the reason why 
+funding is now being raised by charging for commercial use of the database.  
+The real value of SWISSPROT is in the annotations, which include functional
+information, information about active sites, sequence variations, 
+three-dimensional structure, etc. Annotations are often produced in
+collaboration with experts on particular protein families.
+There are also extensive links to other databases.
+
+<br><br>
+
+A good way to view SWISSPROT entries is to use the uniprot server at the 
+EBI.  
+</p>
+
+<ol>
+<li><a href="http://www.ebi.ac.uk/services/" target="NEW">Go to this site</a>
+</li><li>Choose the <b>UniProt</b> database (which includes SWISSPROT as well
+as the less well annotated TrEMBL database)</li>
+<li>Click on the <b>Standard Query Form</b> button </li>
+<li>Do a search using the terms "escherichia coli" and
+"serine protease".
+</li><li>Browse some of the UniProt entries you find.
+</li><li>Note the types of information and database links available.
+</li>
+</ol>
+
+<p>
+When you begin to think about what you will do for assignment 2 for this
+module, this site will be a very good way to identify interesting sequences to
+investigate with bioinformatics methods.
+</p>
+
+<hr>
+
+<h3>Exercise 2: Similarity searches for glutathione S-transferases.</h3>
+
+<p>
+This exercise involves searching for sequences similar to glutathione 
+S-transferases within the SWISSPROT database. These proteins form a large 
+and rather diverse family. Goto the <a href="http://www.uniprot.org/" target="NEW">SWISSPROT</a> database and use the search box to find hits to 
+<b>human glutathione S-transferase</b> go and view the entry P09488 from
+the list. Scroll down to the <b> Sequence Information </b> section and click 
+on <b>FASTA format</b>. This is the query sequence (in FASTA format). Highlight 
+the sequence then select Copy from the browsers Edit menu. Paste the sequence 
+into a text file (e.g. use <b>Notepad</b> for this) in your home directory (M:\ drive)
+and save it as a text file to a filename you can remember e.g. P09488.fasta.
+
+<br><br>
+
+<b>Part 1.</b> Run a preliminary search using the fasta algorithm.
+<br><br>
+
+Goto the EBI <a href="http://www.ebi.ac.uk/Tools/sss/fasta/" target="NEW">FASTA</a> server
+
+<br><br>
+
+On the submission form choose the <b>swiss-prot</b> database and request
+150 scores and 150 alignments (click "More options"). Then either paste the FASTA format sequence into the box <b>or</b>
+upload the file you saved using the "Browse.." option, and press Submit.
+
+</p><p>Examine the results file.  Examine your significant hits (lets take a cutoff at 
+E=0.001 to define significance for the purposes of this exercise).
+Note that most significant hits are indeed glutathione S-transferases.
+But note also that some glutathione S-transferases do not have significant
+scores, showing that simple pairwise comparison is not always sufficient 
+to detect an evolutionary relationship.  Note also that a protein called
+S-CRYSTALLIN generates significant scores.  These are not glutathione 
+S-transferases, in fact these proteins are believed to play a structural
+role in the eye lens.  They are not even enzymes.  What does this tell us
+about evolution, and the use of sequence similarity to predict function?   
+
+</p><p>
+<b>Part 2.</b> Run the same search using the Smith-Waterman algorithm
+<a href="http://www.ebi.ac.uk/Tools/services/web/toolform.ebi?tool=fasta&amp;program=ssearch&amp;context=protein" target="NEW">SSEARCH</a> server at the EBI
+<br><br>
+and proceed as before. 
+
+</p>
+<p> Again choose the swiss-prot database and request 150 scores and 150 
+alignments (Click "More options"). Then paste the FASTA format sequence 
+into the box, and press Run. Notice how much slower it is than fasta. 
+Examine your results.
+Is there any difference?
+
+</p><h3>Exercise 3: A more complex sequence analysis example.</h3>
+
+The example sequence in this case is called <b>NCK1_HUMAN</b>. Find it using
+the search box at the <a href="http://www.uniprot.org/" target="NEW">SWISSPROT</a>
+database (as in Exercise 2). Again save the sequence in a text file (you will need it again
+later). We are going to try to find out something about the likely structure and function of
+this sequence on the basis of similarity to database sequences.
+
+<p>
+<b>Part 1.</b> Run a <b>FASTA</b> search at the <a href="http://npsa-pbil.ibcp.fr/" target="NEW">NPS@</a> server.
+(tip: paste just the sequence into the box - without the header information)
+
+</p><p>Examine your results.  You will see that the very protein itself is
+within SWISSPROT, and found, unsurprisingly, as the top hit.  However,
+we'll ignore this for the moment and imagine a more realistic situation
+where this is not the case.  This amounts to learning about the query 
+protein using hits from the second best onwards.
+
+</p><p>Looking at the list of hits we don't see one dominant type of
+hit as we did with the glutathione S-transferase sequence.  We see some 
+tyrosine kinases, some phosphatases, some GTPase activating proteins, and
+some others.  This would lead us to suspect that our protein has some 
+role in signal transduction, but tells us nothing more specific.  
+
+</p><p>Within the top ten hits is GRAP_DROME (Q08012). Click on the e-value (right-hand column) 
+and examine the alignment. There are two very striking features in this alignment.  
+What do you think they are?  What might they tell us about the domain 
+structure of our query sequence, and about its likely functional similarity 
+with DRK_DROME?  Scroll down a few more alignments and see if you can learn any more.
+
+</p><p>
+<b>Part 3.</b> Re-do part 1 but this time use <b>blastp</b> at the NPS@ server.<br>
+<br>
+Note that blast often reports several segments of similarity between
+each pair of sequences (click on the link from the E-value on the results page to get the alignment).  
+Do you find it easier to deduce the domain organisation from this output than from that of fasta? 
+If you are unsure ask a demonstrator.
+
+
+
+</p><hr>
+
+<p>
+</p><h3>Exercise 4: Other WWW services.</h3>
+
+<p>Browse around the <a href="http://www.ncbi.nlm.nih.gov/" target="NEW">NCBI</a>
+web site. Look in particular at the types of sequence similarity searches
+available on this site.  Look also at the choice of databases and input parameters to the algorithms.
+Run Blastp for the NCK1_HUMAN sequence. Do you find the output generated here more useful? 
+ 
+
+</p><hr>
+
+<p>
+</p><h3>Exercise 5: Another example.</h3>
+
+<p>This example is a real question which was of interest to an experimental
+scientist of the School.  It concerns a sequence from <i>Arabidopsis</i>.
+<br>
+<br>
+</p><p>
+</p><center>
+<table cellpadding="10" border="1">
+<tbody><tr>
+<td valign="bottom" bgcolor="#ffffcc" align="left">
+<font color="RED">
+<pre>MVKETEYYDVLGVSPTATESEIKKAYYIKARQVHPDKNPNDPQAAHNFQVLGEAYQVLSDSGQRQAFDACGKSGISTDAIID
+PATIFTMLFGSELFVGYIGQLAMASMASLDIFTEGDQFDTKKIQEKLGIVQKEREDKLTQILKDRLNEYVINKDEFISNAEA
+EVARLSNGSLWCGYVEYIGYIYVRQAAKELGKKAIYLGVPFIAEWFRNKGHFIKSQLTAATGAYALFQLQEEMKRQLNTEGN
+YTEEELEEYLQAHKRVMIDSLWKLNVADIEATLCRVCQLVLQDPEAKREELRTRARGLKALGRIFQRAKTASESDPLENSEP
+QKLNGNGKNHDEDTSTSPKSSEGSHSTSGPQEPQNPYVKEFKLGDEQFNYYFPRPAPPPGQGNTLPLAMIDSGEIGAYIYIY
+IYIYQSRYFYAVVYHM
+</pre>
+</font></td></tr></tbody></table>
+</center>
+
+<br>
+<br>
+Can you find any other similar sequences from the same organism?  
+Are there any similar sequences in yeast (<i>Saccharomyces cerevisiae</i>).
+Which yeast sequence is most likely to be the ortholog? Try searches initially 
+against SWISSPROT and also with the larger UniProt database available on
+the EBI WWW site. Or try the NCBI site and Blastp with the nr (none redundant) database
+<br><br>
+Is there a homologue in the <b>pdb</b> structural database? 
+<br><br>
+Goto <a href="http://www.ebi.ac.uk/thornton-srv/databases/pdbsum" target="NEW">PDBsum</a> and
+find out about the top 2-3 proteins you have identified. 
+<br><br>
+What is the secondary structure configuration and CATH fold type? Click on the link to PROCHECK and look at the Ramachandran
+plot. Is there anything unusal about the structure? If you are unsure ask a demonstrator.
+<hr>
+</body></html>
