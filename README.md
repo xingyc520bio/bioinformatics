@@ -33,6 +33,10 @@ This include information about protien, gene, sources, ect.
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/7588178c-61cd-4d44-a472-e18e8e2db2aa)
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/bdb742b9-eddb-4724-a51c-a4d1d64ecfaa)
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/b147d164-d9f4-4bb0-8c1f-a01cdc066eb7)
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/6eb911f1-3f76-4741-916e-9d88d8cd9b95)
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/da011b44-08ae-4e36-a55d-ff1c1acd3723)
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/7d2ecd1a-701b-45bc-993e-3d6be077fd78)
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/8064fbcf-da50-41f4-972a-8a7312640980)
 
 
 When you begin to think about what you will do for assignment 2 for this module, this site will be a very good way to identify interesting sequences to investigate with bioinformatics methods.
