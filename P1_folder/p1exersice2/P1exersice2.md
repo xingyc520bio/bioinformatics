@@ -65,4 +65,4 @@ Examine your results.
 
 *Is there any difference?*    
 
-E0 are different.
+E values are different. swith waterman have lower E value and higher similatity so it is more sensitive.
