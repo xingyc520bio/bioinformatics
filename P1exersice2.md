@@ -17,6 +17,9 @@ Scroll down to the Sequence Information section and click on ***FASTA format***.
 This is the query sequence (in FASTA format). Highlight the sequence then select Copy from the browsers Edit menu. Paste the sequence into a text file (e.g. use Notepad for this) in your home directory (M:\ drive) , 
 and save it as a text file to a filename you can remember *e.g. P09488.fasta*.
 
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/68a58bf9-a295-4302-b4e5-ec52bf87a2ba)
+
+
 ### Part 1. Run a preliminary search using the fasta algorithm.
 
 Goto the ***EBI FASTA*** server.     
@@ -50,6 +53,16 @@ and the use of sequence similarity to predict function?
 
 and proceed as before.
 
-Again choose the swiss-prot database and request 150 scores and 150 alignments (Click "More options"). 
+Again choose the ***swiss-prot database***.      
+Link is: http://www.ebi.ac.uk/Tools/services/web/toolform.ebi?tool=fasta&program=ssearch&context=protein     
+
+And request 150 scores and 150 alignments (Click "More options"). 
 Then paste the FASTA format sequence into the box, and press Run. Notice how much slower it is than fasta. 
-Examine your results. Is there any difference?
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/2ed57d37-96e7-4c92-ac36-a1ffb4e7ad8a)
+
+Examine your results. 
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/8f7ac84d-6665-411c-802a-7659b3ed5c07)
+
+*Is there any difference?*    
+
+E0 are different.
