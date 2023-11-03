@@ -3,8 +3,12 @@ The example sequence in this case is called ***NCK1_HUMAN***.
 Find it using the search box at the SWISSPROT database (as in Exercise 2). 
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/ea356b65-0427-4c70-8de2-15476b3516a6)
 
-Again save the sequence in a text file (you will need it again later).      
-see the file here: P1_folder/p1exersic3/nck1human.fasta
+Again save the sequence in a text file (you will need it again later).           
+
+```python 
+githun
+```
+
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/d71a07fd-9bac-4296-9921-df607f97330d)
 
 
