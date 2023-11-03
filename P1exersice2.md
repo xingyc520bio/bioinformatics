@@ -23,6 +23,37 @@ Goto the ***EBI FASTA*** server.
 Link is: https://www.ebi.ac.uk/Tools/sss/fasta/
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/9f6f60f9-6669-45f1-8210-1c7ff4049778)
 
+I get this email   
+The results for the job "Miss Xing" (ID: fasta-E20231103-140303-0703-59897707-p1m) can be viewed at:
+
+http://www.ebi.ac.uk/Tools/services/web/toolresult.ebi?tool=fasta&jobId=fasta-E20231103-140303-0703-59897707-p1m
+
+The job results will be available for 7 days.
+
+Job Details
+===========
+
+stype: protein
+matrix: BL50
+match_scores: none
+gapopen: -10
+gapext: -2
+hsps: false
+expupperlim: 10.0
+explowlim: 0.0
+strand: none
+hist: false
+scores: 150
+alignments: 150
+scoreformat: default
+stats: 1
+annotfeats: false
+dbrange: START-END
+seqrange: START-END
+filter: none
+transltable: -1
+database: [uniprotkb_swissprot]
+ktup: 2
 
 On the submission form choose the swiss-prot database and request 150 scores and 150 alignments (click "More options"). 
 Then either paste the FASTA format sequence into the box or upload the file you saved using the "Browse.." option, and press Submit.
