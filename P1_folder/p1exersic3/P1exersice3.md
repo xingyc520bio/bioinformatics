@@ -26,13 +26,16 @@ We are going to try to find out something about the likely structure and functio
 
 (tip: paste just the sequence into the box - without the header information)
 Link is: https://npsa-pbil.ibcp.fr/cgi-bin/npsa_automat.pl?page=/NPSA/npsa_server.html   
+
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/51a0e74a-8335-4970-a695-031774204e10)
 
 Examine your results. 
+
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/44efb6ab-811e-46f5-a9e5-67c41141f0bf)
 
 You will see that the very protein itself is within SWISSPROT, and found, unsurprisingly, as the top hit. However, we'll ignore this for the moment and imagine a more realistic situation where this is not the case. 
 This amounts to learning about the query protein using hits from the second best onwards.
+
 ![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/94aa4306-c30f-440c-9e8f-1688638d3353)
 
 Looking at the list of hits we don't see one dominant type of hit as we did with the glutathione S-transferase sequence. 
@@ -48,7 +51,19 @@ Scroll down a few more alignments and see if you can learn any more.
 
 ### Part 3. Re-do part 1 but this time use blastp at the NPS@ server.
 
-Note that blast often reports several segments of similarity between each pair of sequences (click on the link from the E-value on the results page to get the alignment). 
+Note that blast often reports several segments of similarity between each pair of sequences 
+(click on the link from the E-value on the results page to get the alignment). 
+
+```python
+MAEEVVVVAKFDYVAQQEQELDIKKNERLWLLDDSKSWWRVRNSMNKTGFVPSNYVERKN
+SARKASIVKNLKDTLGIGKVKRKPSVPDSASPADDSFVDPGERLYDLNMPAYVKFNYMAE
+REDELSLIKGTKVIVMEKCSDGWWRGSYNGQVGWFPSNYVTEEGDSPLGDHVGSLSEKLA
+AVVNNLNTGQVLHVVQALYPFSSSNDEELNFEKGDVMDVIEKPENDPEWWKCRKINGMVG
+LVPKNYVTVMQNNPLTSGLEPSPPQCDYIRPSLTGKFAGNPWYYGKVTRHQAEMALNERG
+HEGDFLIRDSESSPNDFSVSLKAQGKNKHFKVQLKETVYCIGQRKFSTMEELVEHYKKAP
+IFTSEQGEKLYLVKHLS
+```
+![image](https://github.com/xingyc520bio/bioinformatics/assets/49332831/151ab526-d0f8-4b28-8a88-87a7a96208e9)
 
 Do you find it easier to deduce the domain organisation from this output than from that of fasta? 
 If you are unsure ask a demonstrator.
